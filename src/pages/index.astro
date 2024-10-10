@@ -1,5 +1,8 @@
 ---
-
+import "../styles/style.css";
+import Card from "../components/Card.astro";
+import Navigation from "../components/navigation.astro";
+import Button from "../components/Button.astro";
 ---
 
 <html lang="en">
@@ -9,8 +12,19 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
+		<!-- <link rel="stylesheet" href="style.css"> -->
 	</head>
 	<body>
+		<Navigation/>
 		<h1>Astro</h1>
+	
+			<Button variant="primary" size="medium">TEXT</Button>
+			<Button variant="secondary" size="small">TEXT</Button>
+
+			<!-- <Card header="Hej Verden" text="Lorem ipsum"/>
+			<Card header="Hej Hold a" text="Lorem ipsum"/>
+			<Card header="Hej Hold b" text="Lorem ipsum"/> -->
+		
+		</main>
 	</body>
 </html>
